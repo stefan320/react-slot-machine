@@ -1,5 +1,22 @@
 Project Download
 
+1 Open Git Bash.
+
+2 Change the current working directory to the location where you want the cloned directory to be made.
+
+3 Clone The repo and checkout to slot-machine branch by typing the code below and then press Enter: 
+git clone --branch slot-machine https://github.com/stefan320/react-slot-machine.git
+
+Installation:
+
+1) From the command line cd to the project folder.
+2) Install all dependencies by typing the code below:
+yarn install
+
+Run The Project:
+Using yarn:
+yarn start
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
