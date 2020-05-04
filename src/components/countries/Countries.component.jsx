@@ -48,11 +48,13 @@ class Countries extends React.Component {
   };
 
   render() {
-
     return (
       <div className={"countries"}>
-        <label htmlFor="search">Search Country</label>
-        <input className="input" id="search" type="text" onChange={this.handleChange} />
+        <div className={"countries__search"}>
+          <label className={"label"} htmlFor="search">Search Country</label>
+          <input className={"input"} id="search" type="text" onChange={this.handleChange} />
+        </div>
+
         {/* Check if Api Call is ready  */}
         {this.state.countries.length > 0 ? (
           <RenderCountries

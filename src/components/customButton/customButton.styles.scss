@@ -1,0 +1,32 @@
+@import "../../scss/media-queries.scss";
+
+.button {
+    padding: 3rem;
+    text-align: center;
+    font-size: 3.2rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    width: 65%;
+    outline: currentColor;
+    cursor: pointer;
+
+    @include tablet-sm{
+        width:50%;
+      }
+
+      @include tablet-lg{
+        width:30%;
+      }
+   
+
+    &--game{       
+        background-color: var(--color-secondary);
+        color: var(--color-gold); 
+    }
+
+    &--form{       
+        background-color: var(--color-tertiary);
+        color:  var(--color-gold);
+    }
+}

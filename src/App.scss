@@ -1,0 +1,42 @@
+@import "./scss/media-queries.scss";
+
+html > *{
+  line-height: 1;
+  font-size: inherit;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 0.625rem; //10px
+  @include tablet-sm{
+    font-size: .75rem; //12px
+  }
+ 
+
+/* Colors */
+  --color-primary: #381460;
+  --color-secondary: #fe346e;
+  --color-tertiary: #b21f66;
+  --color-gold: #ffbd69;
+
+  --color-grey: #ececec;
+}
+
+
+
+body{
+  background-color: var(--color-gold);
+}
+
+.label{
+  width: 100%;
+}
+
+.input {
+  font-size: 1.8rem;
+  background-color: var(--color-primary);
+  color: var(--color-gold);
+  border: none;
+  height: 4rem;
+  margin-top: 1.6rem;
+}

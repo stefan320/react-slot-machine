@@ -1,0 +1,33 @@
+@import "../../scss/media-queries.scss";
+
+.country {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    background-color: var(--color-primary); 
+    border-top: 1px solid var(--color-gold);
+    border-bottom: 1px solid var(--color-gold);
+    color: var(--color-gold);
+    font-size: 2rem;
+    padding: 2rem 0;
+    font-weight: 600;
+    max-width: 100%;
+    margin: 0 auto;
+
+    @include desktop{
+        justify-content: space-evenly;
+        flex-basis: 50%;
+    }
+
+    &--name {
+        width: 20%;
+    }
+
+    &--flag {
+        max-width: 10rem;
+    }
+
+    &--null {
+        font-weight: 600;
+    }
+}

@@ -24,6 +24,5 @@ export const spinReels = (reelArrays) => {
                             : matchingFruits.cherry === 2 ? 40
                                 : matchingFruits.cherry === 3 ? 50
                                     : 0;
-    console.log({ reelResult, score });
     return { reelResult, score };
 }

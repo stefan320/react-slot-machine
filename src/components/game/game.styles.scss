@@ -1,0 +1,63 @@
+@import "../../scss/media-queries.scss";
+
+.game{
+    padding: 6rem 2rem;
+    text-align: center;
+    background-color: var(--color-primary);
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @include tablet-sm {
+    padding: 6rem 4rem;
+    }
+
+    @include tablet-lg {
+        padding: 6rem;
+        }
+    
+
+    &--score {
+        font-size: 3.6rem;
+        color: var(--color-gold);
+        margin: 0;
+        text-align: right;
+    }
+
+    &__results {
+        margin: 15vh 0;
+        display: flex;
+        font-size: 3rem;
+        color: var(--color-gold);
+        
+        &__reel{
+            flex: 1;
+            border: 1px solid var(--color-gold);
+            background-color: var(--color-primary);
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 15rem;
+                    
+            @include tablet-sm {
+            height: 20rem;
+            }
+
+            &--lemon{
+                background-image: url(../../assets/icons/lemon.svg);
+            }
+
+            &--apple{
+                background-image: url(../../assets/icons/apple.svg);
+            }
+
+            &--cherry{
+                background-image: url(../../assets/icons/cherry.svg);
+            }
+
+            &--banana{
+                background-image: url(../../assets/icons/banana.svg);
+            }
+        }
+    }
+
+
+}

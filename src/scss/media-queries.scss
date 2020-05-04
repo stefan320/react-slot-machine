@@ -1,0 +1,11 @@
+// MEDIA QUERIES
+@mixin tablet-sm {
+    @media (min-width: 48em) { @content; }
+  }
+  @mixin tablet-lg {
+    @media (min-width: 64em) { @content; }
+  }
+  @mixin desktop {
+    @media (min-width: 87.5em) { @content; }
+  }
+  

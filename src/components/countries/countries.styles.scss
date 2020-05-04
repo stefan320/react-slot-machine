@@ -1,25 +1,33 @@
-.country {
-    display: flex;
-    justify-content: space-around;
-    align-content: center;
-    background-color: #1a3263;
-    color: #f5564e;
-    border-top: 1px solid #e8e2db;
-    border-bottom: 1px solid #e8e2db;
-    font-size: 2rem;
-    padding: 2rem;
-    font-weight: 600;
-    max-width: 70rem;
-    margin: 0 auto;
-    
-    
-    &--flag {
-        max-width: 10rem;
-        // object-fit: cover;
-    }
+@import "../../scss/media-queries.scss";
 
-    &--name{
-        width: 20rem;
+
+.countries {
+    color: var(--color-secondary);
+    background-color: var(--color-primary);
+    margin:0 auto;
+    max-width: 1200px;
+
+
+    @include desktop{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+    &__search{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: space-around;
+        padding: 4rem 0;
+        font-size: 2.4rem;
+        font-weight: 600;
+        text-align: center;
+        background-color: var(--color-gold);
         
+        @include desktop{
+           width:100%;
+          }
+    
     }
 }

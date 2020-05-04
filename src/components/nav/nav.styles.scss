@@ -1,0 +1,45 @@
+@import "../../scss/media-queries.scss";
+
+.nav {
+    position: fixed;
+    top:0;
+    overflow: hidden;    
+    width: 100%;
+    background-color: var(--color-secondary);
+    z-index: 555;
+    height: 8rem;
+    border-bottom: 1px solid var(--color-primary);
+   
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        list-style: none;
+        font-size: 2.6rem;
+        text-decoration: none;
+        padding: 0 2rem;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+
+
+        @include tablet-sm {
+            padding: 0 4rem;
+            }
+        @include tablet-lg {
+            padding: 0 6rem;
+            }
+    
+        
+
+        &--item{
+            color: var(--color-gold);
+            font-weight: 600;
+            text-decoration: none;
+        }
+    }
+
+    & + * {
+        margin-top: 8rem;
+    }
+}
